@@ -1,0 +1,44 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "1. Run Assistant (Full Pipeline -> output.csv)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_assistant.py",
+      "args": ["run"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "2. Run Evaluation Harness (eval_harness.py)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/eval_harness.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "3. Run 3-Run Reproducibility Audit",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_assistant.py",
+      "args": ["reproduce"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "4. Run All Unit Tests",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "unittest",
+      "args": ["discover", "tests/"],
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "5. Interactive Assistant Query (March Corridor Surge)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_assistant.py",
+      "args": ["query", "Why", "did", "Chennai-Bangalore", "cost", "spike", "in", "March", "2025?"],
+      "console": "integratedTerminal"
+    }
+  ]
+}

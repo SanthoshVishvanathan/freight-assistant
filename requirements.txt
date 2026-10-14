@@ -1,0 +1,6 @@
+# Core dependencies for FreightTiger Cost Intelligence Assistant
+# Standard production scientific Python stack - zero heavy GPU / torch requirements
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+scikit-learn>=1.2.0

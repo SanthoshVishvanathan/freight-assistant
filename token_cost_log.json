@@ -1,0 +1,11 @@
+{
+  "model_name": "deterministic-rule-engine",
+  "total_calls": 19,
+  "total_input_tokens": 2432,
+  "total_output_tokens": 1108,
+  "total_tokens": 3540,
+  "estimated_cost_usd": 0.0,
+  "execution_time_seconds": 0.047,
+  "rate_card_per_million_input": 0.0,
+  "rate_card_per_million_output": 0.0
+}
